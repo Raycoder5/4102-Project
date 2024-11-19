@@ -75,15 +75,14 @@
            ACCEPT YY
            DISPLAY "Enter Initial Balance: "
            ACCEPT AccountBalance
-           OPEN OUTPUT AccountFile
-               WRITE AccountData
-               IF WS-FILE-STATUS NOT = "00"
-                   DISPLAY "Error creating account. Please try again."
-                   CLOSE AccountFile
-                   STOP RUN
-               END-IF
-           CLOSE AccountFile
-           DISPLAY "Account successfully created.".
+           OPEN EXTEND AccountFile
+           WRITE AccountData
+           IF WS-FILE-STATUS NOT = "00"
+               DISPLAY "Error creating account. Please try again."
+           ELSE
+               DISPLAY "Account successfully created."
+           END-IF
+           CLOSE AccountFile.
 
        DEPOSIT-FUNDS.
            PERFORM PROMPT-FOR-ACCOUNT-NUMBER
