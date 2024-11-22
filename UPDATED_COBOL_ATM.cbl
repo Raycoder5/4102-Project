@@ -1,5 +1,8 @@
+      * November/25/2024 || ITCS 4102-091 || COBOL Cobras
+      * This program will demonstrate the basic capabilities of an ATM
+      * for an imaginary bank called COBOL bank. 
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. COBOL_ATM.
+       PROGRAM-ID. UPDATED_COBOL_ATM.
 
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
@@ -34,23 +37,29 @@
        MAIN-PROGRAM.
            DISPLAY "Welcome to COBOL Bank ATM System."
            PERFORM DISPLAY-MENU.
-
+      * Display the menu for the user to select each of the functions.
        DISPLAY-MENU.
            DISPLAY "1. Create Account"
            DISPLAY "2. Deposit Funds"
            DISPLAY "3. Withdraw Funds"
            DISPLAY "4. View Account"
            DISPLAY "5. Exit"
+      * Get the user's input from the menu for the EVALUATE section.    
            ACCEPT WS-USER-INPUT
            EVALUATE WS-USER-INPUT
+      * Run the CREATE-ACCOUNT function when the user inputs 1.        
                WHEN "1"
                    PERFORM CREATE-ACCOUNT
+      * Run the DEPOSIT-FUNDS function when the user inputs 2.        
                WHEN "2"
                    PERFORM DEPOSIT-FUNDS
+      * Run the WITHDRAW-FUNDS function when the user inputs 3.        
                WHEN "3"
                    PERFORM WITHDRAW-FUNDS
+      * Run the VIEW-ACCOUNT function when the user inputs 4.        
                WHEN "4"
                    PERFORM VIEW-ACCOUNT
+      * Display a goodbye message when the user inputs 5.        
                WHEN "5"
                    DISPLAY "Thank you for using COBOL Bank. Goodbye!"
                    STOP RUN
