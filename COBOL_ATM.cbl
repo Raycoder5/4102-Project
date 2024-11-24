@@ -1,3 +1,6 @@
+      * November/25/2024 || ITCS 4102-091 || COBOL Cobras
+      * This program will demonstrate the basic capabilities of an ATM
+      * for an imaginary bank called COBOL bank. 
        IDENTIFICATION DIVISION.
        PROGRAM-ID. COBOL_ATM.
 
