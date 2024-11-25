@@ -33,19 +33,23 @@ To compile and run the program, ensure you have the following:
 1. **GnuCOBOL Compiler**: Version 3.2 or later is recommended.
     GnuCOBOL is an open-source COBOL compiler that translates COBOL code into C code, which is      then compiled into an executable. You can download it from:
    - [official GnuCOBOL website](https://gnucobol.sourceforge.io/).
-   - Follow the installation instructions for your operating system.
+   - Installation instructions are available on the website.
 2. **Supported Operating System**: The program should work on any operating system where             GnuCOBOL is supported, including Windows, Linux, and macOS.
 
 ---
 
 ## Setup and Compilation
 1. **Install GnuCOBOL**  
-   Follow the installation guide provided on the GnuCOBOL website for your operating system.
+   Follow the installation instructions specific to your operating system provided on the GnuCOBOL website or documentation.
 
 2. **Save the Source Code**  
-   Save the COBOL source code into a file named `COBOL_ATM.cob`. Use the `.cob` or `.cbl` file extension.
+   Copy the COBOL source code into a file named COBOL_ATM.cob. Ensure that the file extension is .cob or .cbl, which are standard for COBOL programs.
 
 3. **Compile the Program**  
-   Open a terminal or command prompt, navigate to the directory containing the `COBOL_ATM.cob` file, and run:  
+   Open your terminal or command prompt and navigate to the directory containing the COBOL_ATM.cob file.
+Run the following command to compile the program:
    ```bash
    cobc -x -free -o COBOL_ATM COBOL_ATM.cob
+   '''
+
+
