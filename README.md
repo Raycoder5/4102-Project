@@ -1,4 +1,4 @@
-# COBOL ATM System - README
+# COBOL ATM System
 
 ## Table of Contents
 1. [Introduction](#introduction)
