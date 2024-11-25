@@ -208,3 +208,44 @@ Enter your choice:
 ---
 
 ## Troubleshooting
+
+<ul>
+    <li><em>Compilation Errors</em>:
+        <ul>
+            <li><b>Syntax Errors</b>: Ensure that the source code is copied correctly without missing lines or characters.</li>
+            <li><b>GnuCOBOL Version</b>: Verify that you are using GnuCOBOL version 3.2 or later.</li>
+        </ul>
+    </li>
+    <li><em>Runtime Errors</em>:
+        <ul>
+            <li><b>File Access Errors</b>: Check file permissions for card.dat and temp.dat. The program needs read and write access.</li>
+            <li><b>Account Not Found</b>: Ensure you are entering the correct account number. Account numbers are assigned starting from 1.</li>
+        </ul>
+    </li>
+    <li><em>Data File Issues</em>:
+        <ul>
+            <li><b>Corrupted card.dat</b>: If the data file is corrupted, you may need to delete it and recreate accounts. Be aware that this will erase all existing account data.</li>
+        </ul>
+    </li>
+    <li><em>Operating System Commands</em>:
+        <ul>
+            <li>The program uses system commands (DEL, RENAME) to manipulate files.
+                <ul>
+                    <li><b>Windows</b>: Commands should work as is.</li>
+                    <li><b>Linux/macOS</b>: Modify the system calls in the COBOL code to use Unix commands (<b>rm, mv</b>).</li>
+                </ul>
+            <li><b>Example Modification</b> In the <b>CLOSE-ACCOUNT</b> and <b>UPDATE-ACCOUNT</b> paragraphs, replace:
+                <ul>
+                    <li>CALL "SYSTEM" USING "DEL card.dat"</li>
+                    <li>CALL "SYSTEM" USING "RENAME temp.dat card.dat"</li>
+                </ul>
+                <b>With</b>:
+                <ul>
+                    <li>CALL "SYSTEM" USING "rm card.dat"</li>
+                    <li>CALL "SYSTEM" USING "mv temp.dat card.dat"</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+    
