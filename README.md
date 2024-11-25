@@ -93,11 +93,27 @@ Enter your choice:
 
 <ol>
     <li><em>Create Account</em>:</li>
-    <li>Deposit Funds:</li>
-    <li>Withdraw Funds:</li>
-    <li>View Account:</li>
-    <li>Exit:</li>
-    <li>Transfer Funds:</li>
-    <li>Close Account:</li>
-    <li>Update Account Information:</li>
+    <ul>
+        <li><b>Purpose</b>: Opens a new account</li>
+        <li><b>Instructions</b></li>
+        <ul>
+            <li>Enter the required personal and card details when prompted.</li>
+            <li>An account number will be automatically assigned.</li>
+        <ul>
+    <ul>
+    <li><em>Deposit Funds</em>:</li>
+        <ul>
+            <li><b>Purpose</b>: Opens a new account</li>
+            <li><b>Instructions</b></li>
+        <ul>
+            <li>Enter the required personal and card details when prompted.</li>
+            <li>An account number will be automatically assigned.</li>
+        <ul>
+    <ul>
+    <li><em>Withdraw Funds</em>:</li>
+    <li><em>View Account</em>:</li>
+    <li><em>Exit</em>:</li>
+    <li><em>Transfer Funds</em>:</li>
+    <li><em>Close Account</em>:</li>
+    <li><em>Update Account Information</em>:</li>
 </ol>
