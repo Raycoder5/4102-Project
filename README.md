@@ -50,6 +50,54 @@ To compile and run the program, ensure you have the following:
 Run the following command to compile the program:
    ```bash
    cobc -x -free -o COBOL_ATM COBOL_ATM.cob
-   '''
 
+Explanation of the command:
+<ul>
+    <li>cobc: Invokes the GnuCOBOL compiler.</li>
+    <li>-x: Creates an executable file.</li>
+    <li>-free: Indicates that the source code uses free-format (not fixed-format).</li>
+    <li>-o COBOL_ATM: Specifies the output executable file name (COBOL_ATM).</li>
+    <li>COBOL_ATM.cob: The COBOL source file to compile.</li>
+</ul>
 
+---
+
+## Running the Program
+**To run the compiled program, use the following command in your terminal**
+```bash
+./COBOL_ATM
+```
+**On Windows, you need to use:**
+```bash
+COBOL_ATM.exe
+```
+
+---
+
+##Usage Instructions
+Upon running the program, you will be presented with a menu of options:
+```bash
+Welcome to COBOL Bank ATM System.
+1. Create Account
+2. Deposit Funds
+3. Withdraw Funds
+4. View Account
+5. Exit
+6. Transfer Funds
+7. Close Account
+8. Update Account Information
+Enter your choice:
+```
+
+**Menu Options**
+
+<ol>
+    <li>**Create Account**:</li>
+    <li>**Deposit Funds**:</li>
+    <li>**Withdraw Funds**:</li>
+    <li>**View Account**:</li>
+    <li>**Exit**:</li>
+    <li>**Transfer Funds**:</li>
+    <li>**Close Account**:</li>
+    <li>**Update Account Information**:</li>
+</ol>
