@@ -321,7 +321,7 @@
            ACCEPT YY OF ExpirationDate OF AccountData
            DISPLAY "Enter Initial Balance: "
            ACCEPT AccountBalance OF AccountData
-           OPEN OUTPUT AccountFile
+           OPEN EXTEND AccountFile
            WRITE AccountData
            IF WS-FILE-STATUS NOT = "00"
                DISPLAY "Error creating account. Please try again."
