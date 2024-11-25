@@ -74,7 +74,7 @@ COBOL_ATM.exe
 
 ---
 
-##Usage Instructions
+## Usage Instructions
 Upon running the program, you will be presented with a menu of options:
 ```bash
 Welcome to COBOL Bank ATM System.
@@ -92,12 +92,12 @@ Enter your choice:
 **Menu Options**
 
 <ol>
-    <li>**Create Account**:</li>
-    <li>**Deposit Funds**:</li>
-    <li>**Withdraw Funds**:</li>
-    <li>**View Account**:</li>
-    <li>**Exit**:</li>
-    <li>**Transfer Funds**:</li>
-    <li>**Close Account**:</li>
-    <li>**Update Account Information**:</li>
+    <li><em>Create Account</em>:</li>
+    <li>Deposit Funds:</li>
+    <li>Withdraw Funds:</li>
+    <li>View Account:</li>
+    <li>Exit:</li>
+    <li>Transfer Funds:</li>
+    <li>Close Account:</li>
+    <li>Update Account Information:</li>
 </ol>
