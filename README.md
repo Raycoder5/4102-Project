@@ -30,10 +30,11 @@ The **COBOL ATM System** is a console-based application that simulates basic ban
 
 ## Prerequisites
 To compile and run the program, ensure you have the following:
-1. **GnuCOBOL Compiler**: Version 3.2 or later is recommended.  
-   - Download from the [official GnuCOBOL website](https://gnucobol.sourceforge.io/).
+1. **GnuCOBOL Compiler**: Version 3.2 or later is recommended.
+    GnuCOBOL is an open-source COBOL compiler that translates COBOL code into C code, which is      then compiled into an executable. You can download it from:
+   - [official GnuCOBOL website](https://gnucobol.sourceforge.io/).
    - Follow the installation instructions for your operating system.
-2. **Supported Operating System**: The program works on Windows, Linux, and macOS.
+2. **Supported Operating System**: The program should work on any operating system where             GnuCOBOL is supported, including Windows, Linux, and macOS.
 
 ---
 
