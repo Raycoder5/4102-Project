@@ -92,24 +92,28 @@ Enter your choice:
 **Menu Options**
 
 <ol>
-    <li><em>Create Account</em>:</li>
-    <ul>
-        <li><b>Purpose</b>: Opens a new account</li>
-        <li><b>Instructions</b></li>
-        <ul>
-            <li>Enter the required personal and card details when prompted.</li>
-            <li>An account number will be automatically assigned.</li>
-        <ul>
-    <ul>
-    <li><em>Deposit Funds</em>:</li>
+    <li><em>Create Account</em>:
         <ul>
             <li><b>Purpose</b>: Opens a new account</li>
-            <li><b>Instructions</b></li>
+            <li><b>Instructions</b>
+                <ul>
+                    <li>Enter the required personal and card details when prompted.</li>
+                    <li>An account number will be automatically assigned.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><em>Deposit Funds</em>:
         <ul>
-            <li>Enter the required personal and card details when prompted.</li>
-            <li>An account number will be automatically assigned.</li>
-        <ul>
-    <ul>
+            <li><b>Purpose</b>: Adds money to an existing account.</li>
+            <li><b>Instructions</b>
+                <ul>
+                    <li>Enter your account number.</li>
+                    <li>Enter the amount to deposit</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
     <li><em>Withdraw Funds</em>:</li>
     <li><em>View Account</em>:</li>
     <li><em>Exit</em>:</li>
