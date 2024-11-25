@@ -114,10 +114,97 @@ Enter your choice:
             </li>
         </ul>
     </li>
-    <li><em>Withdraw Funds</em>:</li>
-    <li><em>View Account</em>:</li>
-    <li><em>Exit</em>:</li>
-    <li><em>Transfer Funds</em>:</li>
-    <li><em>Close Account</em>:</li>
-    <li><em>Update Account Information</em>:</li>
+    <li><em>Withdraw Funds</em>:
+        <ul>
+            <li><b>Purpose</b>: Withdraws money from an existing account.</li>
+            <li><b>Instructions</b>
+                <ul>
+                    <li>Enter your account number.</li>
+                    <li>Enter the amount to withdraw.</li>
+                    <li>Ensure that the account has sufficient funds.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><em>View Account</em>:
+        <ul>
+            <li><b>Purpose</b>: Displays account details and balance.</li>
+            <li><b>Instructions</b>
+                <ul>
+                    <li>Enter your account number to view the information.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><em>Exit</em>:
+        <ul>
+            <li><b>Purpose</b>: Exits the application.</li>
+        </ul>
+    </li>
+    <li><em>Transfer Funds</em>:
+        <ul>
+            <li><b>Purpose</b>: Transfers money from one account to another.</li>
+            <li><b>Instructions</b>
+                <ul>
+                    <li>Enter your (source) account number.</li>
+                    <li>Enter the destination account number.</li>
+                    <li>Enter the amount to transfer.</li>
+                    <li>Ensure both accounts exist and the source account has sufficient funds.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><em>Close Account</em>:
+        <ul>
+            <li><b>Purpose</b>: Closes an existing account and removes it from the system.</li>
+            <li><b>Instructions</b>
+                <ul>
+                    <li>Enter your account number.</li>
+                    <li>Confirm the closure when prompted.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><em>Update Account Information</em>:
+        <ul>
+            <li><b>Purpose</b>: Updates personal and card details of an existing account.</li>
+            <li><b>Instructions</b>
+                <ul>
+                    <li>Enter your account number.</li>
+                    <li>Enter new details when prompted.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
 </ol>
+
+---
+
+## Data Files
+<ul>
+    <li><b>Account Data File</b>: The program uses a file named <em>card.dat</em> to store account information persistently.
+        <ul>
+            <li><b>Location</b>: Created in the same directory as the executable.</li>
+            <li><b>Format</b>: Line sequential file with records containing account details.</li>
+        </ul>
+    </li>
+    <li><b>Temporary Data File</b>: A temporary file named <em>temp.dat</em> is used during account updates and closures.
+        <ul>
+            <li><b>Purpose</b>: To rewrite the data file while omitting or updating specific records.</li>
+            <li><b>Note</b>: The program handles deletion of temp.dat after operations.</li>
+        </ul>
+    </li>
+</ul>
+
+---
+
+## Notes
+<ul>
+    <li><b>Data Persistance</b>: Account information is stored in card.dat. Deleting this file will result in loss of all account data.</li>
+    <li><b>Account Numbers</b>: Assigned sequentially starting from 1. Ensure that card.dat is not deleted to maintain account number continuity.</li>
+    <li><b>Numeric Input</b>: Ensure that numeric inputs (e.g., account numbers, amounts) contain only digits to prevent input errors.</li>
+</ul>
+
+---
+
+## Troubleshooting
